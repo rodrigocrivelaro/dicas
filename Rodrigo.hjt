@@ -1,0 +1,95 @@
+<Treepad version 3.0>
+dt=Text
+<node>
+Rodrigo
+0
+<end node> 5P9i0s8y19Z
+dt=Text
+<node>
+Linux
+1
+<end node> 5P9i0s8y19Z
+dt=Text
+<node>
+Git
+1
+Para baixar o GIT:
+WINDOWS - http://msysgit.github.io/
+LINUX - sudo apt-get install openssl git-core
+MAC-OS -  http://code.google.com/p/git-osx-installer/downloads/list?can=3
+
+Ver o arquivo Instal Git.doc no Google Drive
+
+git clone [uri_do_repositorio] - comando que copia o repositório para a pasta selecionada criando um diretório com o mesmo nome do repositório
+Ex: git clone git://github.com/jcfonsecagit/repositorio.git
+Caso queira, é possível que o nome da pasta em seu computador seja diferente. Basta especificar o nome desejado no fim do comando:
+Ex: git clone git://github.com/jcfonsecagit/repositorio.git meuprojeto
+
+
+git init - dentro de um diretório, transforma o diretório em um repositório git
+
+git ls-files - mostra os arquivos que estão sendo controlados pelo git
+
+git status - mostra o status do repositório, para saber o que ja esta sendo controlado pelo git e o que não esta sendo ainda
+
+git add "namefile" - adiciona o arquivo ou diretório especificado ao controle do git para commitar
+É possível passar mais de um arquivo como parâmetro para o comando git add, basta separá-los por um espaço em branco, no mesmo comando. Além disso é possível adicionar todos os arquivos da pasta atual, com git add ..
+O parâmetro também pode ser uma operação de busca de arquivos comum, por exemplo, para adiconar todos os arquivos com a extensão "txt" ao Index, podemos utilizar o comando git add *.txt, ou todos os arquivos em uma determinada subpasta do repositório com git add nome_da_pasta/.
+
+git config --global user.name "your Name" - necessário informar o nome e o email antes de fazer alterações no repositório para que o git salve quem fez as alterações.
+git config --global user.email "your_email@dominio.com" - necessário informar o nome e o email antes de fazer alterações no repositório para que o git salve quem fez as alterações.
+--global é opcional e é usado para definir o  usuário e o email para o computador, caso não seja passado o git asumirá somente para o repositório atual.
+Caso essa configuração não seja efetuada, o Git vai determinar o nome de usuário atual do terminal como o autor das alterações. É importante que essa configuração seja feita para que seja mais fácil encontrar suas próprias alterações e facilitar a comunicação entre os membros do time caso haja alguma dúvida sobre um código feito por outra pessoa.
+
+git commit -m "mensagem do commit" - commita as alterações no repositório
+
+git tag - quebra o repositório em versões
+
+git ls-files --deleted | xargs git rm - Deletando todos os aquivos removidos ao mesmo tempo:
+
+git checkout v0.1- localiza e inicializa a versão informada
+
+git diff v0.1 v0.2 - mostra as diferenças entre as versões informadas
+
+git log - mostra um resumo das modificações ocorridas no repositório
+
+git whatchchanged -p - mostra detalhadamente o que foi alterado em cada commit do repositório
+
+git blame index.html - mostra quem alterou o que no arquivo especificado
+
+git remote - mostra os repositórios remotos do repositório local (quando não mostra nada, não tem nenhum)
+
+git remote add origin git@github.com:[seu_nome_de_usuario]/[nome_do_repositorio].git - linka o repositório local no repositório remoto especificado
+Ex: git remote add origin https://github.com/rodrigocrivelaro/estudogit.git
+
+git push origin master - envia meu repositório local para o repositório remoto onde, origin é o nome do repositório e master é a branch 
+
+git pull origin master - update do repositório, sincronização do repositório remoto com o repositório local
+
+git branch - mostra as branchs do repositório local
+git branch -r - mostra as branchs do repositório remoto
+git branch -a - mostra todas as branchs do repositório, sejam locais ou remotas
+
+git branch nomebranch - cria uma nova branch no repositório local
+git push -u origin design - cria a branch remota e faz com que a branch local a referencie atualizando automaticamente(-u)
+
+git branch -t design origin/design -  cria uma branch local com o mesmo nome da branch remota, muda para essa nova branch criada e linka a branch local e remota
+
+git checkout nomebranch - troca a branch a ser utilizada
+git checkout -b design - cria a branch design e muda para a branch design.
+
+git branch -d design - deleta a branch design local
+git push origin :design - deleta a branch design remota
+
+git fetch origin - verifica todas as atualizações que foram realizadas no repositório referente ao origin
+
+<end node> 5P9i0s8y19Z
+dt=Text
+<node>
+Java
+1
+Plugin Eclipse para geração de Jar´s maiores -  http://kurucz-grafika.de/fatjar
+
+Plugin Eclipse para geração de diagramas de classe UML a partir do projeto - http://www.objectaid.net/update
+
+<end node> 5P9i0s8y19Z
